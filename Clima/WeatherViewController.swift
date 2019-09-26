@@ -98,7 +98,10 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate ,change
     
     //Write the didFailWithError method here:
     
-    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        
+        cityLabel.text = "Error en el gps"
+    }
     
 
     
